@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form
+        {
+            background-color: olive;
+            padding: 30px;
+            padding-top: 20px;
+        }
+        table
+        {
+           padding-right: 50px;
+           padding-left: 70px;
+           padding-top: 20px;
+           padding-bottom: 20px;
+           border-color: aliceblue;
+           border-right: 25px;
+           border-top: 25px;
+           border-left: 25px;
+           border-bottom: 25px;
+           opacity: 50px;
+        }
+        caption{
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: black;
+            font-size: 25px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+  
+        <form action="" method="post">
+            <table border="1" align="center">
+                <caption>Step 1: Your Details</caption>
+                <tr>
+                    <td>Name</td>
+                    <td colspan="2"><input type="text" name="name" placeholder="First and Last Name"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>
+                        <input type="email" name="email" id="" placeholder="example@domain.com">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td><input type="contact" name="phone" placeholder="Eg. +447500000000" ></td>
+                </tr>
+            </table>
+        
+        <table border="1" align="center">
+            
+            <caption>step 2: Delivery Address </caption>
+            <tr>
+                <td>Address</td>
+                <td><textarea name="address" id="" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td>Postcode</td>
+                <td>
+                    <input type="text" name="postcode" id="">
+                </td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td><input type="text" name="country"></td>
+            </tr>
+        </table>
+   
+        <table border="1" align="center">
+            <caption>step 3: Card Details</caption>
+            <tr>
+                <td>Card Type</td>
+                <td><input type="radio" id="" name="ctype" value="visa"><img src="image\visa.jpeg" alt=""> VISA
+                    <input type="radio" id="" name="ctype" value="AmEx">AmEx
+                    <input type="radio" id="" name="ctype" value="Mastercard">Mastercard
+                </td>
+            </tr>
+            <tr>
+                <td>Card Number</td>
+                <td>
+                    <input type="text" name="cnumber" id="">
+                </td>
+            </tr>
+            <tr>
+                <td>Security Code</td>
+                <td><input type="text" name="securitycode"></td>
+            </tr>
+            <tr>
+                <td>Name on Card</td>
+                <td><input type="text" name="cname" placeholder="Exact name as on the Card"></td>
+            </tr>
+            <tr>
+
+                <td colspan="2" align="center"><input type="submit" name="submit" value="BUY IT!"></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
